@@ -1,0 +1,368 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Container for Index Page */
+.container {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Section */
+.image-container {
+  width: 50%;
+  height: 100%;
+  background-color: #d1d3d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Section */
+.text-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-container h1 {
+  color: #da6d07;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #555;
+}
+
+.text-container a {
+  color: #da6d07;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.text-container a:hover {
+  color: rgb(201, 88, 13);
+}
+
+/* Login Container */
+.login-container {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  width: 30%;
+  text-align: center;
+  margin-top: 20px; /* Adding some space to separate it from the index container */
+  
+  margin: 0 auto;
+}
+
+/* Login Heading */
+h2.login {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  color: #da6d07;
+  text-transform: uppercase;
+}
+
+/* Form Styling */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.login-container form label {
+  font-size: 1.1em;
+  color: #333;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.login-container form input {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.login-container form input:focus {
+  border-color: #da6d07;
+  outline: none;
+}
+
+/* Button Styling */
+.login-container button {
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #da6d07;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: rgb(201, 88, 13);
+}
+.register{
+  color: #da6d07;
+}
+.register:hover{
+  color: rgb(201, 88, 13);
+  text-decoration: none;
+}
+/* Error Message */
+p[style="color:red;"] {
+  font-size: 0.9em;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Link Styling */
+p a {
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #1c5d3d;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color:#808080; /* Green background */
+}
+
+/* Blog Post Container */
+.posts {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Post */
+.posts .post {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.posts .post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.posts .post h2 {
+  color: #da6d07;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.posts .post p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1c5d3d;
+}
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes elements to opposite sides */
+  align-items: center;
+  background-color:#da6d07; /* Green background */
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixes navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 60px; /* Adjust height */
+  z-index: 1000; /* Keeps it above other content */
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+/* Welcome Message */
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Navbar Menu */
+.navbar div {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+/* Navbar Links */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Logout Button */
+.btn-logout {
+  background-color: #d9534f;
+}
+
+.btn-logout:hover {
+  background-color: #c9302c;
+}
+
+/* Prevent Navbar Overlap */
+body {
+  padding-top: 50px; /* Ensures content starts below navbar */
+}
+.title{
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+.user-container{
+  padding: 50px 0;
+  margin:0 auto!important;
+}
+/* Button Styling */
+button, .btn {
+  padding: 12px 20px;
+  background-color: #da6d07;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+  display: inline-block;
+}
+
+button:hover, .btn:hover {
+  background-color: #ce3a35;
+  color:#fff;
+  text-decoration: none;
+}
+
+/* Logout Button */
+.btn-logout {
+  background: #da6d07;
+}
+
+.btn-logout:hover {
+  background: #c9302c;
+}
+
+/* Form Styling */
+form {
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .posts, form {
+    width: 90%;
+  }
+
+  h1, .header {
+    font-size: 1.5em;
+  }
+
+  .posts {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
